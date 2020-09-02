@@ -1,6 +1,7 @@
 # Django-tutorial
 # Create Virtual Environment
-$ python -m venv env <br>
-$ source env/bin/activate <br>
+$ pip install virtualenv
+$ virtualenv env_site
+$ source env_site/bin/activate <br>
 $ pip install requirement.txt <br>
 
