@@ -7,6 +7,7 @@ from django.template import loader
 # Create your views here.  
 from django.http import HttpResponse  
 from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import redirect
 @csrf_exempt
 def index(request):  
    template = loader.get_template('index.html') # getting our template  
@@ -26,9 +27,8 @@ def home(request):
 		return render(request, 'demo.html', {'total': form_data})
 @csrf_exempt
 def view_database(request):
-	mailid= request.session['semail'] #from user table mail
-	for p in User.objects.raw('SELECT * FROM first_app_user where email=%s',[mailid]):
-		print(p.uname,p.email)
+	p=Signup.objects.get(email=request.session.get('semail'))
+	print(p.fname,p.email)
 	return render(request, 'result.html',{'row': p})
 
 @csrf_exempt
@@ -44,7 +44,8 @@ def sign_insert(request):
 		post.email=request.POST.get('email')
 		post.password=request.POST.get('psw')
 		post.image=request.FILES['pfile'].name
-		post.save()	 
+		post.save()	
+		handle_uploaded_file(request.FILES['pfile'])  
 		request.session['semail'] =request.POST.get('email')
 		print(request.FILES['pfile'].name)
-		return render(request, 'demo.html') 
+		return redirect('/view_database/') 
