@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+      {% load static %}  
+      {% static "" as baseUrl %}
+</head>
+<body>
+
+<h2>Basic HTML Table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th> 
+    <th>email</th>
+     <th>image</th>
+  </tr>
+  <tr>
+    <td>{{row.uname}}</td>
+    <td>{{row.email}}</td>
+    <td>{{row.file}}</td>
+  </tr>
+ 
+  
+</table>
+<!-- <img src="{{row.file.url}}" alt="My image" height="300px" width="700px"/> -->
+<img src="{{ baseUrl }}upload/{{row.file.url}}" alt="My image" height="300px" width="700px"/>  
+</body>
+</html>
