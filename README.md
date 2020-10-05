@@ -1,3 +1,22 @@
+to create virtual environments for Python-->
+
+$ sudo apt install python3-venv
+
+$ mkdir my-project-env
+
+create a new virtual environment for this project
+
+python3 -m venv my-project-env
+
+$ source my-project-env/bin/activate
+
+(my-project-env) $pip install requests
+ 
+ $ sudo apt-get install python-dev default-libmysqlclient-dev
+
+$ pip install mysqlclient
+
+$ python manage.py runserver
 all Coomand
 To Create a Django Project execute: 
 
