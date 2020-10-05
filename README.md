@@ -1,7 +1,10 @@
 all Coomand
 To Create a Django Project execute: 
+
 $ django-admin startproject django_example
+
 $ cd django_example
+
 $ python manage.py startapp post
 
 To create a migration for this model, use the following command. It will create a migration file inside the migration folder.
