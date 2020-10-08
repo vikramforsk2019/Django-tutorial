@@ -10,6 +10,9 @@ python3 -m venv my-project-env
 
 $ source my-project-env/bin/activate
 
+pip install
+$  sudo apt install python-pip
+
 (my-project-env) $pip install requests
  
  $ sudo apt-get install python-dev default-libmysqlclient-dev
