@@ -6,12 +6,17 @@ $ mkdir my-project-env
 
 create a new virtual environment for this project
 
-python3 -m venv my-project-env
+$ python3 -m venv my-project-env
 
 $ source my-project-env/bin/activate
 
+$ export DEBUG=True
+
 pip install
+
 $  sudo apt install python-pip
+
+$ pip install -r test/example/requirements.txt
 
 (my-project-env) $pip install requests
  
