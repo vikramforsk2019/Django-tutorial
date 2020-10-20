@@ -78,7 +78,7 @@ blues = Genre.objects.create(name="Blues")
 
 
 
-
+'''bash
 |-- Procfile
 |-- __pycache__
 |   |-- app.cpython-37.pyc
@@ -102,4 +102,4 @@ blues = Genre.objects.create(name="Blues")
 |-- templates
 |   `-- upload.html
 `-- yolo_detection.py
-
+'''
