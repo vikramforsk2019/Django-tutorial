@@ -76,8 +76,9 @@ from myapp.models import Genre
 rock = Genre.objects.create(name="Rock")
 blues = Genre.objects.create(name="Blues")
 
+# Directory Structure
 
-
+```bash
 |-- Procfile
 |-- __pycache__
 |   |-- app.cpython-37.pyc
@@ -101,4 +102,4 @@ blues = Genre.objects.create(name="Blues")
 |-- templates
 |   `-- upload.html
 `-- yolo_detection.py
-
+```
