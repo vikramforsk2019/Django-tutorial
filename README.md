@@ -75,3 +75,31 @@ python manage.py shell
 from myapp.models import Genre
 rock = Genre.objects.create(name="Rock")
 blues = Genre.objects.create(name="Blues")
+
+
+
+
+|-- Procfile
+|-- __pycache__
+|   |-- app.cpython-37.pyc
+|   `-- yolo_detection.cpython-37.pyc
+|-- app.py
+|-- classes.names
+|-- darknet-yolov3.cfg
+|-- lapi.weights
+|-- requirements.txt
+|-- static
+|   |-- detect_cut
+|   |   |-- 8.jpg
+|   |   `-- babu.png
+|   |-- index.js
+|   |-- style.css
+|   `-- uploads
+|       |-- 8.jpg
+|       |-- 8_yolo_out_py.jpg
+|       |-- babu.png
+|       `-- babu_yolo_out_py.jpg
+|-- templates
+|   `-- upload.html
+`-- yolo_detection.py
+
