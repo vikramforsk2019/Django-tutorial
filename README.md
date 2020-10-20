@@ -102,4 +102,5 @@ blues = Genre.objects.create(name="Blues")
 |-- templates
 |   `-- upload.html
 `-- yolo_detection.py
+
 '''
