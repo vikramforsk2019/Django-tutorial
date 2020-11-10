@@ -1,28 +1,15 @@
-to create virtual environments for Python-->
-
+## What Are Virtual Environments
+> virtual environment’s are Python’s way of separating dependencies between projects.
+```
 $ sudo apt install python3-venv
-
 $ mkdir my-project-env
-
-create a new virtual environment for this project
-
 $ python3 -m venv my-project-env
-
 $ source my-project-env/bin/activate
-
 $ export DEBUG=True
-
-pip install
-
+```
+>
 $  sudo apt install python-pip
-
-$ pip install -r test/example/requirements.txt
-
-(my-project-env) $pip install requests
- 
- $ sudo apt-get install python-dev default-libmysqlclient-dev
-
-$ pip install mysqlclient
+$ pip install -r requirements.txt
 
 $ python manage.py runserver
 all Coomand
@@ -60,16 +47,17 @@ How to convert htmp page into django page..
 https://dev.to/amartyadev/converting-any-html-template-into-a-django-template-25ob
 
 <"link rel="stylesheet" href="assets/css/bootstrap.min.css">
-needs to be changed to 
+changed to 
 <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
 
-To ease up the above process, there exists a python package djangify which can be installed by: 
-pip install djangify
-djangify -d main/templates/
-
-#tree#
+# To ease up the above process, there exists a python package djangify which can be installed by: 
+```
+$ pip install djangify
+$ djangify -d main/templates/
+```
+# tree
 pip install django-mptt
-#insert data directly into created table
+# insert data directly into created table using shell
 python manage.py shell
 
 from myapp.models import Genre
@@ -78,28 +66,4 @@ blues = Genre.objects.create(name="Blues")
 
 # Directory Structure
 
-```bash
-|-- Procfile
-|-- __pycache__
-|   |-- app.cpython-37.pyc
-|   `-- yolo_detection.cpython-37.pyc
-|-- app.py
-|-- classes.names
-|-- darknet-yolov3.cfg
-|-- lapi.weights
-|-- requirements.txt
-|-- static
-|   |-- detect_cut
-|   |   |-- 8.jpg
-|   |   `-- babu.png
-|   |-- index.js
-|   |-- style.css
-|   `-- uploads
-|       |-- 8.jpg
-|       |-- 8_yolo_out_py.jpg
-|       |-- babu.png
-|       `-- babu_yolo_out_py.jpg
-|-- templates
-|   `-- upload.html
-`-- yolo_detection.py
 ```
