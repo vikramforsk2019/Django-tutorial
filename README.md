@@ -39,21 +39,21 @@ $ python3 manage.py showmigrations myapp
 
 
 
-How to convert htmp page into django page..
+* How to convert htmp page into django page..
 https://dev.to/amartyadev/converting-any-html-template-into-a-django-template-25ob
 
 <"link rel="stylesheet" href="assets/css/bootstrap.min.css">
 changed to 
 <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
 
-# To ease up the above process, there exists a python package djangify which can be installed by: 
+* To ease up the above process, there exists a python package djangify which can be installed by: 
 ```
 $ pip install djangify
 $ djangify -d main/templates/
 ```
-# tree
+* tree
 pip install django-mptt
-# insert data directly into created table using shell
+* insert data directly into created table using shell
 python manage.py shell
 
 from myapp.models import Genre
