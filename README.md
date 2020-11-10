@@ -34,28 +34,29 @@ $ python3 manage.py showmigrations
 
 > We can get app-specific migrations by specifying app-name, see the example.
 
-$ python3 manage.py showmigrations myapp  
+$ python3 manage.py showmigrations myapp 
+$ python manage.py runserver
 
 
 
 
 * How to convert htmp page into django page..
-https://dev.to/amartyadev/converting-any-html-template-into-a-django-template-25ob
+```
+ https://dev.to/amartyadev/converting-any-html-template-into-a-django-template-25ob
 
 <"link rel="stylesheet" href="assets/css/bootstrap.min.css">
 changed to 
 <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
 
 * To ease up the above process, there exists a python package djangify which can be installed by: 
-```
 $ pip install djangify
 $ djangify -d main/templates/
 ```
-* tree
+*tree
 pip install django-mptt
-* insert data directly into created table using shell
-python manage.py shell
 
+*insert data directly into created table using shell
+python manage.py shell
 from myapp.models import Genre
 rock = Genre.objects.create(name="Rock")
 blues = Genre.objects.create(name="Blues")
