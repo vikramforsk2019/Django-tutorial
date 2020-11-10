@@ -1,4 +1,4 @@
-## What Are Virtual Environments
+## Django installation/execute project
 > virtual environment’s are Python’s way of separating dependencies between projects.
 ```
 $ sudo apt install python3-venv
