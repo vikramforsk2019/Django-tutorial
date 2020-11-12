@@ -73,7 +73,7 @@ $ sudo systemctl start mongodb
 $ mongo
 $ db
 $ pip install djongo
-```
+
 * Into settings.py file of your project, add: 
     DATABASES = {
          'default': {
@@ -81,14 +81,14 @@ $ pip install djongo
           'NAME': 'your-db-name',
           }
       }
- ```
+
 $ python3 manage.py makemigrations
 $ python3 manage.py migrate
 $ python manage.py runserver
 ```
 # MongoDB Compass As the GUI for MongoDB
 https://www.mongodb.com/try/download/compass?jmp=docs
->then run
+>download it then run
 ```
 $ sudo dpkg -i mongodb-compass_1.23.0_amd64.deb 
 $  mongodb-compass
