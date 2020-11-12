@@ -72,23 +72,24 @@ $ sudo systemctl status mongodb
 $ sudo systemctl start mongodb
 $ mongo
 $ db
-$ pip install django
-$  mongodb-compass
 $ pip install djongo
+```
 * Into settings.py file of your project, add: 
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'your-db-name',
-    }
-}
+    DATABASES = {
+         'default': {
+          'ENGINE': 'djongo',
+          'NAME': 'your-db-name',
+          }
+      }
+ ```
 $ python3 manage.py makemigrations
 $ python3 manage.py migrate
 $ python manage.py runserver
-
+```
 # MongoDB Compass As the GUI for MongoDB
 https://www.mongodb.com/try/download/compass?jmp=docs
 >then run
+```
 $ sudo dpkg -i mongodb-compass_1.23.0_amd64.deb 
 $  mongodb-compass
 ```
