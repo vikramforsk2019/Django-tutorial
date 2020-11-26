@@ -93,3 +93,7 @@ https://www.mongodb.com/try/download/compass?jmp=docs
 $ sudo dpkg -i mongodb-compass_1.23.0_amd64.deb 
 $  mongodb-compass
 ```
+# Find virtual env root location
+> $ grep 'VIRTUAL_ENV='plate_env/bin/activate
+# don't have root but it's copy
+> then we can use it by changing the virtual env path in bin/activate.
